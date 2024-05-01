@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VespaCell" rowHeight="150" id="KGk-i7-Jjw" customClass="VespaTableViewCell" customModule="VespaAppStoryboard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Kw-RS-P3X">
+                        <rect key="frame" x="12" y="25" width="120" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="WuD-ik-pib"/>
+                            <constraint firstAttribute="width" constant="120" id="YE4-hV-x1r"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EWG-YK-MQr">
+                        <rect key="frame" x="144" y="25" width="164" height="100"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Nama Vespa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCH-sz-9oO">
+                                <rect key="frame" x="0.0" y="0.0" width="164" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" systemColor="systemMintColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desc Vespa" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnE-k3-L6a">
+                                <rect key="frame" x="0.0" y="27" width="164" height="73"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3Kw-RS-P3X" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="3kP-t2-uS8"/>
+                    <constraint firstItem="3Kw-RS-P3X" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="AAC-Dk-gNU"/>
+                    <constraint firstAttribute="bottom" secondItem="EWG-YK-MQr" secondAttribute="bottom" constant="25" id="FJ8-BP-yWL"/>
+                    <constraint firstAttribute="trailing" secondItem="EWG-YK-MQr" secondAttribute="trailing" constant="12" id="T9n-lC-pY7"/>
+                    <constraint firstItem="EWG-YK-MQr" firstAttribute="leading" secondItem="3Kw-RS-P3X" secondAttribute="trailing" constant="12" id="uZJ-Ty-2nO"/>
+                    <constraint firstItem="EWG-YK-MQr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="z58-2e-5rE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descVespa" destination="UnE-k3-L6a" id="uNF-ju-Axy"/>
+                <outlet property="ivVespa" destination="3Kw-RS-P3X" id="jfb-3B-PYU"/>
+                <outlet property="namaVespa" destination="aCH-sz-9oO" id="DCT-nB-p8E"/>
+            </connections>
+            <point key="canvasLocation" x="-34" y="20"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

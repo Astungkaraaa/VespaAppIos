@@ -13,6 +13,10 @@
 		9AEB7AAA2BE2173F00EF1E5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AEB7AA82BE2173F00EF1E5D /* Main.storyboard */; };
 		9AEB7AAC2BE2174100EF1E5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AEB7AAB2BE2174100EF1E5D /* Assets.xcassets */; };
 		9AEB7AAF2BE2174100EF1E5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AEB7AAD2BE2174100EF1E5D /* LaunchScreen.storyboard */; };
+		9AEB7AB72BE217C200EF1E5D /* VespaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEB7AB62BE217C100EF1E5D /* VespaModel.swift */; };
+		9AEB7ABA2BE2184200EF1E5D /* VespaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEB7AB82BE2184200EF1E5D /* VespaTableViewCell.swift */; };
+		9AEB7ABB2BE2184200EF1E5D /* VespaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AEB7AB92BE2184200EF1E5D /* VespaTableViewCell.xib */; };
+		9AEB7ABD2BE21CE800EF1E5D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEB7ABC2BE21CE800EF1E5D /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		9AEB7AAB2BE2174100EF1E5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AEB7AAE2BE2174100EF1E5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AEB7AB02BE2174100EF1E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AEB7AB62BE217C100EF1E5D /* VespaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VespaModel.swift; sourceTree = "<group>"; };
+		9AEB7AB82BE2184200EF1E5D /* VespaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VespaTableViewCell.swift; sourceTree = "<group>"; };
+		9AEB7AB92BE2184200EF1E5D /* VespaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VespaTableViewCell.xib; sourceTree = "<group>"; };
+		9AEB7ABC2BE21CE800EF1E5D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				9AEB7AAB2BE2174100EF1E5D /* Assets.xcassets */,
 				9AEB7AAD2BE2174100EF1E5D /* LaunchScreen.storyboard */,
 				9AEB7AB02BE2174100EF1E5D /* Info.plist */,
+				9AEB7AB62BE217C100EF1E5D /* VespaModel.swift */,
+				9AEB7AB82BE2184200EF1E5D /* VespaTableViewCell.swift */,
+				9AEB7AB92BE2184200EF1E5D /* VespaTableViewCell.xib */,
+				9AEB7ABC2BE21CE800EF1E5D /* DetailViewController.swift */,
 			);
 			path = VespaAppStoryboard;
 			sourceTree = "<group>";
@@ -126,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AEB7AAF2BE2174100EF1E5D /* LaunchScreen.storyboard in Resources */,
+				9AEB7ABB2BE2184200EF1E5D /* VespaTableViewCell.xib in Resources */,
 				9AEB7AAC2BE2174100EF1E5D /* Assets.xcassets in Resources */,
 				9AEB7AAA2BE2173F00EF1E5D /* Main.storyboard in Resources */,
 			);
@@ -140,7 +153,10 @@
 			files = (
 				9AEB7AA72BE2173F00EF1E5D /* ViewController.swift in Sources */,
 				9AEB7AA32BE2173F00EF1E5D /* AppDelegate.swift in Sources */,
+				9AEB7ABA2BE2184200EF1E5D /* VespaTableViewCell.swift in Sources */,
+				9AEB7ABD2BE21CE800EF1E5D /* DetailViewController.swift in Sources */,
 				9AEB7AA52BE2173F00EF1E5D /* SceneDelegate.swift in Sources */,
+				9AEB7AB72BE217C200EF1E5D /* VespaModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
